@@ -3,17 +3,17 @@ h1. "AnZen-Lab (UEC, Tokyo)":http://www.az.inf.uec.ac.jp/  論文スタイル(Te
 LaTeXのスタイルファイル，サンプル，TeXコンパイルのためのユーティリティです. 文献管理にはBibTeXを用いています．
 また，これらのファイルはEUC-JPで記述されています.
 
-h2. Requirements
+h2. 要件
 
-Makefile uses above software.
+Makefileでは以下のソフトウェアを利用しています.
 
 * platex
 * bibtex
 * dvipdfmx
 
-So if you want to use "Make" command, you have to install there software before using.
+したがって，"Make"コマンドによるTeXコンパイルを行いたい場合は上記のソフトウェアを事前にインストールしておく必要があります.
 
-h2. Tested
+h2. 動作確認
 
 * DELL OPTIPLEX GX520/Ubuntu 10.04 LTS.
 
