@@ -12,6 +12,27 @@
 \usepackage{slashbox}
 % 追加
 \usepackage{booktabs}
+\usepackage{listings,jlisting}
+\usepackage{enumerate}
+\lstset{%
+	language={Ruby},
+	basicstyle={\footnotesize},%
+	identifierstyle={\footnotesize},%
+	commentstyle={\footnotesize\itshape},%
+	keywordstyle={\footnotesize\bfseries},%
+	ndkeywordstyle={\footnotesize},%
+	stringstyle={\footnotesize\ttfamily},
+	frame={tb},
+	breaklines=true,
+	columns=[l]{fullflexible},%
+	numbers=left,%
+	xrightmargin=0zw,%
+	xleftmargin=1zw,%
+	numberstyle={\scriptsize},%
+	stepnumber=1,
+	numbersep=0.5zw,%
+	lineskip=-0.5ex%
+}
 
 \makeatletter
 \def\thefootnote{\ifnum\c@footnote>\z@\leavevmode\lower.5ex%
@@ -39,7 +60,7 @@
 % 論文本体
 \include{main}
 % 付録
-%\input{appendix}
+\input{documents/appendix.tex}
 
 %\addcontentsline{toc}{chapter}{索引}
 %\printindex
