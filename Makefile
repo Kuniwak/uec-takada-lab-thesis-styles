@@ -1,11 +1,12 @@
 SOURCE = thesis
 # LATEX = platex-sjis
 LATEX = platex
-BIBTEX = bibtex
+# BIBTEX = bibtex
+BIBTEX = jbibtex
 DVIPDFMX = dvipdfmx
 
 all:
-	$(LATEX) $(SOURCE).tex
+	$(LATEX) -halt-on-error $(SOURCE).tex
 	$(BIBTEX) main
 	$(LATEX) $(SOURCE).tex
 	$(LATEX) $(SOURCE).tex
@@ -18,4 +19,4 @@ open:
 	open $(SOURCE).pdf
 
 clean:
-	rm -f *~ $(SOURCE).dvi $(SOURCE).aux $(SOURCE).log *.lot *.lof
+	rm -f *~ $(SOURCE).dvi $(SOURCE).idx *.aux *.log *.lot *.lof *.toc *.bbl *.blg 
