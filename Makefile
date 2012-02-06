@@ -6,11 +6,11 @@ BIBTEX = jbibtex
 DVIPDFMX = dvipdfmx
 
 all:
-	$(LATEX) -halt-on-error $(SOURCE).tex
-	$(BIBTEX) main
-	$(LATEX) $(SOURCE).tex
-	$(LATEX) $(SOURCE).tex
-	$(DVIPDFMX) $(SOURCE).dvi
+	$(LATEX) -halt-on-error $(SOURCE).tex | nkf --ic=e --oc=w
+	$(BIBTEX) main | nkf --ic=e --oc=w
+	$(LATEX) $(SOURCE).tex | nkf --ic=e --oc=w
+	$(LATEX) $(SOURCE).tex | nkf --ic=e --oc=w
+	$(DVIPDFMX) $(SOURCE).dvi | nkf --ic=e --oc=w
 
 pdf:
 	$(DVIPDFMX) $(SOURCE).dvi
