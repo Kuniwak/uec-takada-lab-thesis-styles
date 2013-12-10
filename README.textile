@@ -24,5 +24,3 @@ h2. Tested
 * kpathsea version 5.0.0
 
 * dvipdfmx-20090708
-
-p=. Written by "Yuki Kokubun":mailto:uec.takada.lab@hotmail.co.jp
